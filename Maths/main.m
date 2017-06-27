@@ -7,11 +7,36 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AdditionQuestion.h"
+#import "InputHandler.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        BOOL gameOn = YES;
+        NSInteger userAnswer;
+        while (gameOn) {
+            
+        AdditionQuestion *q1 = [[AdditionQuestion alloc]init];
+            NSLog(@" %@", q1.question);
+            
+            NSString *userInput = [InputHandler getUserInput];
+            
+            if ([userInput isEqualToString:@"quit"]) {
+                gameOn = NO;
+                break;
+            }
+            else {
+            userAnswer = [userInput intValue];
+            }
+            
+            if (q1.answer == userAnswer) {
+                NSLog(@"RIGHT!!");
+            }
+            else {
+                NSLog(@"WRONG!!!");
+            }
+        }
+        
     }
     return 0;
 }
