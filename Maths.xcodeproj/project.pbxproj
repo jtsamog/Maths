@@ -10,6 +10,7 @@
 		301D477B1F02D02900F14082 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D477A1F02D02900F14082 /* main.m */; };
 		301D47831F02D3BD00F14082 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D47821F02D3BD00F14082 /* InputHandler.m */; };
 		301D47861F02D78100F14082 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D47851F02D78100F14082 /* AdditionQuestion.m */; };
+		301D47891F02E60500F14082 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D47881F02E60500F14082 /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		301D47821F02D3BD00F14082 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		301D47841F02D78100F14082 /* AdditionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
 		301D47851F02D78100F14082 /* AdditionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		301D47871F02E60500F14082 /* ScoreKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		301D47881F02E60500F14082 /* ScoreKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				301D47821F02D3BD00F14082 /* InputHandler.m */,
 				301D47841F02D78100F14082 /* AdditionQuestion.h */,
 				301D47851F02D78100F14082 /* AdditionQuestion.m */,
+				301D47871F02E60500F14082 /* ScoreKeeper.h */,
+				301D47881F02E60500F14082 /* ScoreKeeper.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301D47891F02E60500F14082 /* ScoreKeeper.m in Sources */,
 				301D477B1F02D02900F14082 /* main.m in Sources */,
 				301D47861F02D78100F14082 /* AdditionQuestion.m in Sources */,
 				301D47831F02D3BD00F14082 /* InputHandler.m in Sources */,
