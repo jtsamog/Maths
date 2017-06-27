@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
         
         while (gameOn) {
         AdditionQuestion *q1 = [[AdditionQuestion alloc]init];
-            NSLog(@" %@", q1.question);
+            NSLog(@"%@", q1.question);
             
             NSString *userInput = [InputHandler getUserInput];
             
@@ -34,13 +34,14 @@ int main(int argc, const char * argv[]) {
             if (q1.answer == userAnswer) {
                 NSLog(@"RIGHT!!");
                 scoreCount.rightCount += 1;
-                NSLog(@"Score:%@", [scoreCount generateScore]);
+                [scoreCount generateScore];
+                NSLog(@"%@", [scoreCount generateScore]);
             }
             else {
                 NSLog(@"WRONG!!!");
                 scoreCount.wrongCount += 1;
                 [scoreCount generateScore];
-                NSLog(@"Score:%@", [scoreCount generateScore]);
+                NSLog(@"%@", [scoreCount generateScore]);
             }
         }
         

@@ -19,7 +19,7 @@
 }
 
 -(NSString *)generateScore{
-    return [NSString stringWithFormat:@"Score: %2f right, %2f wrong -----%2f%%", self.rightCount, self.wrongCount, self.rightCount*100/(self.rightCount + self.wrongCount)];
+    return [NSString stringWithFormat:@"Score: %0.0f right, %.0f wrong -----%0.2f%%", self.rightCount, self.wrongCount, self.rightCount*100/(self.rightCount + self.wrongCount)];
 }
 
 @end
