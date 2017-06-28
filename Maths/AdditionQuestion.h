@@ -13,7 +13,14 @@
 @property (nonatomic) NSInteger answer;
 @property (nonatomic) NSInteger leftValue;
 @property (nonatomic) NSInteger rightValue;
+@property (nonatomic) NSDate *startTime;
+@property (nonatomic) NSDate *endTime;
+
+
 
 
 +(NSString *)generateRandomQuestion;
+-(NSInteger)answer;
+-(NSTimeInterval)answerTime;
+    
 @end

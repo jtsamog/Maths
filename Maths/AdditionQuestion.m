@@ -16,12 +16,25 @@
         _rightValue = arc4random_uniform(100);
         _question = [NSString stringWithFormat:@"What is %li + %li = ?", _leftValue, _rightValue];
         _answer = _leftValue + _rightValue;
+        _startTime = [NSDate date];
     }
     return self;
 }
 
 +(NSString *)generateRandomQuestion{
     return nil;
+}
+
+//overiding getter
+-(NSInteger)answer{
+    _endTime = [NSDate date];
+    return _answer;
+}
+
+ //to calculate time diff between startTime and endTime
+-(NSTimeInterval)answerTime{
+     NSTimeInterval answerTime = [self.startTime timeIntervalSinceDate:self.endTime];
+    return answerTime;
 }
 
 
